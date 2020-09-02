@@ -1,7 +1,8 @@
 import React from 'react'
+
 import produtosListe  from './data'
 import ProdutoComponent from './Components/Produto'
-import ListaProdutosComponentt from './Components/ListaProdutos'
+import ListaProdutosComponent from './Components/ListaProdutos'
 import CarrinhoComponent from './Components/Carrinho'
 
 
@@ -55,7 +56,7 @@ export default function AppComponent () {
       return (
         <React.Fragment>
           <div className="col-sm-8"> 
-            <ListaProdutosComponentt>
+            <ListaProdutosComponent>
               {
                 produtosListe.map((produto, index) => 
                 
@@ -67,7 +68,7 @@ export default function AppComponent () {
                 
                 )
               }
-            </ListaProdutosComponentt>
+            </ListaProdutosComponent>
           </div> 
           <div className="col-sm-4">   
             <CarrinhoComponent itens={carrinhoItens} onRemoveItemCarrinho={removeItemCarrinho}/> 

@@ -2,7 +2,7 @@ import React from 'react'
 
 import CardLojaComponent from './CardLoja';
 
-export default function ProdutoComponent  (props)  {
+export default ProdutoComponent = (props) =>  {
 
    console.log('*** ProdutoComponent Neste ponto produto = ', props.item.id, props.onAddCarrinho)
    return (
